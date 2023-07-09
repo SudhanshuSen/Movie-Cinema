@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+function add(a, b) {
+  return a + b;
+}
+
+function subtract(a, b) {
+  return a - b;
+}
+
+var operation = prompt("Choose an operation: 1 - Add, 2 - Subtract");
+
+
+var number1 = parseFloat(prompt("Enter the first number:"));
+var number2 = parseFloat(prompt("Enter the second number:"));
+
+
+if (operation === "1") {
+  var result = add(number1, number2);
+  document.write("The result of addition is: " + result);
+} else if (operation === "2") {
+  var result = subtract(number1, number2);
+  document.write("The result of subtraction is: " + result);
+} else {
+  document.write("Invalid operation choice!");
+}
+
+</script>
+<body>
+    
+</body>
+</html>
